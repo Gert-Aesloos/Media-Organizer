@@ -1,6 +1,7 @@
 from pathlib import Path
 
-class Categorizer():
+
+class Categorizer:
     def __init__(self, category_mapping):
         self.category_mapping = category_mapping
 
@@ -10,5 +11,5 @@ class Categorizer():
         for category, extentions in self.category_mapping.items():
             if extention in extentions:
                 return category
-        
+
         return "Other"

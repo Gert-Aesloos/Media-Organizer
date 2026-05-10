@@ -6,6 +6,7 @@ from file_mover import FileMover
 
 import argparse
 
+
 def main():
     # Parsing args
     parser = argparse.ArgumentParser()
@@ -23,13 +24,10 @@ def main():
     mover = FileMover(args.destination)
 
     # Start organizing
-    organizer = MediaOrganizer(
-        scanner,
-        categorizer,
-        mover
-    )
+    organizer = MediaOrganizer(scanner, categorizer, mover)
 
     organizer.organize()
+
 
 if __name__ == "__main__":
     main()

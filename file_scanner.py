@@ -1,9 +1,10 @@
 from pathlib import Path
 
-class FileScanner():
+
+class FileScanner:
     def __init__(self, source_dir):
         self.source_dir = Path(source_dir)
-    
+
     def scan_files(self):
         files = []
 
